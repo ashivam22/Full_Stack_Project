@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "3a7cf518-1fca-4efc-92cf-77048cd418a8",
+		"name": "LightFeather",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getSupervisor",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "submitSupervisor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"phoneNumber\": \"204-798-9969\",\r\n    \"supervisor\": {\r\n        \"firstName\": \"Karson\",\r\n        \"lastName\": \"Olson\",\r\n        \"jurisdiction\": \"u\"\r\n    },\r\n    \"ad\": \"Karson\",\r\n    \"lastName\": \"Olson\",\r\n    \"email\": \"abc@gmai.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8085/api/submit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"api",
+						"submit"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
